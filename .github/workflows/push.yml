@@ -8,7 +8,7 @@ env:
   NGINX_VERSION: 1.17.10
   DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
   DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
-  REGISTRY_URL: ${{REGISTRY_URL}}
+  REGISTRY_URL: ${{secrets.REGISTRY_URL}}
 jobs:
   platform:
     name: nginx-extras
